@@ -1,0 +1,10 @@
+import { VerticalBox, Button } from "std-widgets.slint";
+export component Recipe inherits Window {
+    in-out property <int> counter: 0;
+    callback button-pressed <=> button.clicked;
+    VerticalBox {
+        button := Button {
+            text: "Button, pressed " + root.counter + " times";
+        }
+    }
+}
