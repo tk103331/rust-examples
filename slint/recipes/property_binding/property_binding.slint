@@ -1,0 +1,11 @@
+import { VerticalBox, Slider } from "std-widgets.slint";
+export component Recipe inherits Window {
+    VerticalBox {
+        slider := Slider {
+            maximum: 100;
+        }
+        Text {
+            text: "Value: \{round(slider.value)}";
+        }
+    }
+}

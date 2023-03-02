@@ -65,6 +65,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc7eb209b1518d6bb87b283c20095f5228ecda460da70b44f0802523dea6da04"
 
 [[package]]
+name = "animation_sequence"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
 name = "arrayref"
 version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -851,6 +858,13 @@ name = "either"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7fcaabb2fef8c910e7f4c7ce9f67a1283a1715879a7c230ca9d6d1ae31f16d91"
+
+[[package]]
+name = "element_animations"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
 
 [[package]]
 name = "enumflags2"
@@ -2241,6 +2255,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "property_binding"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
 name = "qttypes"
 version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2804,6 +2825,13 @@ name = "stable_deref_trait"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
+
+[[package]]
+name = "states"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
 
 [[package]]
 name = "static_assertions"

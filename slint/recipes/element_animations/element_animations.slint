@@ -1,0 +1,30 @@
+import { CheckBox } from "std-widgets.slint";
+export component Recipe inherits Window {
+    width: 200px;
+    height: 100px;
+
+    rect := Rectangle {
+        x:0;
+        y: 5px;
+        width: 40px;
+        height: 40px;
+        background: blue;
+        animate x {
+            duration: 500ms;
+            easing: ease-in-out;
+        }
+    }
+
+
+    CheckBox {
+        y: 25px;
+        text: "Align rect to the right";
+        toggled => {
+            if (self.checked) {
+                 rect.x = parent.width - rect.width;
+            } else {
+                 rect.x = 0px;
+            }
+        }
+    }
+}

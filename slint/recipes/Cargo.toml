@@ -9,6 +9,10 @@ edition = "2021"
 members = [
   "clickable_button",
   "clickable_button_native",
+  "property_binding",
+  "element_animations",
+  "animation_sequence",
+  "states",
 ]
 
 [workspace.dependencies]
