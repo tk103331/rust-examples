@@ -1,0 +1,18 @@
+import { GridBox, Button, Slider } from "std-widgets.slint";
+export component GridRecipe inherits Window {
+    GridBox {
+        Row {
+            Button { text: "First"; }
+            Button { text: "Second"; }
+        }
+        Row {
+            Button { text: "Third"; }
+            Button { text: "Fourth"; }
+        }
+        Row {
+            Slider {
+                colspan: 2;
+            }
+        }
+    }
+}

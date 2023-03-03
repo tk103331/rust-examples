@@ -13,6 +13,9 @@ members = [
   "element_animations",
   "animation_sequence",
   "states",
+  "transitions",
+  "layouts",
+  "global_callback",
 ]
 
 [workspace.dependencies]

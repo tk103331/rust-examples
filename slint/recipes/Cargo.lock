@@ -1154,6 +1154,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d2fabcfbdc87f4758337ca535fb41a6d701b65693ce38287d856d1674551ec9b"
 
 [[package]]
+name = "global_callback"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
 name = "glow"
 version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1600,6 +1607,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a53776d271cfb873b17c618af0298445c88afc52837f3e948fa3fafd131f449"
 dependencies = [
  "arrayvec",
+]
+
+[[package]]
+name = "layouts"
+version = "0.1.0"
+dependencies = [
+ "slint",
 ]
 
 [[package]]
@@ -3051,6 +3065,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "24eb03ba0eab1fd845050058ce5e616558e8f8d8fca633e6b163fe25c797213a"
 dependencies = [
  "once_cell",
+]
+
+[[package]]
+name = "transitions"
+version = "0.1.0"
+dependencies = [
+ "slint",
 ]
 
 [[package]]

@@ -1,0 +1,23 @@
+import { TabWidget } from "std-widgets.slint";
+import { VerticalRecipe } from "vertical.slint";
+import { HorizontalRecipe } from "horizontal.slint";
+import { GridRecipe } from "grid.slint";
+
+export component Recipe inherits Window {
+    width: 200px;
+    height: 200px;
+    TabWidget {
+        Tab {
+            title: "Vertical";
+            VerticalRecipe {}
+        }
+        Tab {
+            title: "Horizontal";
+            HorizontalRecipe {}
+        }
+        Tab {
+            title: "Grid";
+            GridRecipe {}
+        }
+    }
+}
