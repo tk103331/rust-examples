@@ -672,6 +672,48 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b365fabc795046672053e29c954733ec3b05e4be654ab130fe8f1f94d7051f35"
 
 [[package]]
+name = "custom_button"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "custom_slider"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "custom_slider2"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "custom_switch"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "custom_table"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "custom_tabs"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
 name = "dark-light"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1134,6 +1176,26 @@ dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "wasi",
+]
+
+[[package]]
+name = "gettext-rs"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e49ea8a8fad198aaa1f9655a2524b64b70eb06b2f3ff37da407566c93054f364"
+dependencies = [
+ "gettext-sys",
+ "locale_config",
+]
+
+[[package]]
+name = "gettext-sys"
+version = "0.21.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c63ce2e00f56a206778276704bbe38564c8695249fdc8f354b4ef71c57c3839d"
+dependencies = [
+ "cc",
+ "temp-dir",
 ]
 
 [[package]]
@@ -1676,6 +1738,19 @@ name = "linux-raw-sys"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f051f77a7c8e6957c0696eac88f26b0117e54f52d3fc682ab19397a8812846a4"
+
+[[package]]
+name = "locale_config"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08d2c35b16f4483f6c26f0e4e9550717a2f6575bcd6f12a53ff0c490a94a6934"
+dependencies = [
+ "lazy_static",
+ "objc",
+ "objc-foundation",
+ "regex",
+ "winapi",
+]
 
 [[package]]
 name = "lock_api"
@@ -2400,6 +2475,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "456c603be3e8d448b072f410900c09faf164fbce2d480456f50eea6e25f9c848"
 
 [[package]]
+name = "responsive"
+version = "0.1.0"
+dependencies = [
+ "slint",
+]
+
+[[package]]
 name = "resvg"
 version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2922,6 +3004,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "temp-dir"
+version = "0.1.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af547b166dd1ea4b472165569fc456cfb6818116f854690b0ff205e636523dab"
+
+[[package]]
 name = "tempfile"
 version = "3.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3071,6 +3159,14 @@ dependencies = [
 name = "transitions"
 version = "0.1.0"
 dependencies = [
+ "slint",
+]
+
+[[package]]
+name = "translations"
+version = "0.1.0"
+dependencies = [
+ "gettext-rs",
  "slint",
 ]
 
