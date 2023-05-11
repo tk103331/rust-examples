@@ -1,0 +1,21 @@
+[package]
+name = "druid"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "controller_demo",
+    "druid-app",
+    "druid-widget",
+    "file_demo",
+    "flex_demo",
+    "handle_demo",
+    "hide-image",
+    "lens_demo",
+    "radio_demo",
+]
+[workspace.dependencies]
+druid = { git = "https://github.com/linebender/druid.git", features=["image-all"]}

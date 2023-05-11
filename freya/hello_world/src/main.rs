@@ -16,14 +16,14 @@ fn app(cx: Scope) -> Element {
         container {
             height: "100%",
             width: "100%",
-            background: "rgb(35, 35, 35)",
+            background: "rgb(135, 135, 135)",
             color: "white",
             padding: "12",
             Button {
                 onclick: move |_| count += 1,
                 label { "Click to decrease  " }
             },
-            label { " -> {count}" }
+            label { "Count: {count}" }
         }
     )
 }
