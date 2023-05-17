@@ -1,17 +1,14 @@
 [package]
-name = "iced"
+name = "menu"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members=[
-    "hello_world",
-    "counter",
+[dependencies]
+iced_aw = { workspace = true, features = [
     "menu",
-]
-
-[workspace.dependencies]
-iced = "0.9.0"
-iced_aw = "0.5.2"
+    "quad",
+    "icon_text"
+] }
+iced = {workspace = true, features = ["svg"]}
